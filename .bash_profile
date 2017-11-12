@@ -37,8 +37,8 @@ alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 ## Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-alias cleannpm="find . -name node_modules -type d -exec rm -rf {} +"
+alias ds-clean="find . -type f -name '*.DS_Store' -ls -delete"
+alias npm-clean="find . -name node_modules -type d -exec rm -rf {} +"
 
 ## Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
